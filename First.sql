@@ -15,4 +15,20 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 show tables;
 select * from users;
 
-DROP DATABASE startersql;
+select email,gender from users;
+
+RENAME TABLE users TO customers;
+select * from customers;
+
+RENAME TABLE customers TO users;
+select * from customers;
+
+
+ALTER Table users ADD column isactive Boolean Default true;
+
+
+ALTER TABLE users ADD COLUMN is_active BOOLEAN DEFAULT TRUE;
+select * from users;
+
+
+ALTER TABLE users DROP COLUMN is_active;
