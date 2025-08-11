@@ -24,8 +24,6 @@ RENAME TABLE customers TO users;
 select * from customers;
 
 
-ALTER Table users ADD column isactive Boolean Default true;
-
 
 ALTER TABLE users ADD COLUMN is_active BOOLEAN DEFAULT TRUE;
 select * from users;
