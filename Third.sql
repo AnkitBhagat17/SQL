@@ -8,6 +8,15 @@ USE startersql;
 
 -- UPDATE users SET name = 'Aisha Khan' where email = 'aisha@example.com';
 
-UPDATE users SET salary = salary + 10000 WHERE salary < 60000;
+-- UPDATE users SET salary = salary + 10000 WHERE salary < 60000;
+
+-- select * from users;
+
+-- SET SQL_SAFE_UPDATES = 0;
+
+-- DELETE FROM users
+-- WHERE salary > 65000;
+
+DELETE FROM users WHERE id = 3;
 
 select * from users;
