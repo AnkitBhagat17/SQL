@@ -19,4 +19,6 @@ USE startersql;
 
 -- DELETE FROM users WHERE id = 3;
 
-select * from users WHERE id = 10;
+-- select * from users WHERE id = 10;
+
+SELECT COUNT(*) FROM users;
