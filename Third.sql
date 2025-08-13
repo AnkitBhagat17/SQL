@@ -40,3 +40,25 @@ SELECT gender , AVG(salary) AS avg_salary FROM users GROUP BY gender;
 SELECT id,gender, lower(name) as lower, LENGTH(name) AS name_len FROM users;
 
 SELECT id,gender, lower(name) as lower, CONCAT(LOWER(name), '5677') as username, NOW() as time,YEAR(date_of_birth) AS yob, LENGTH(name) AS name_len FROM users;
+
+SELECT name, DATEDIFF(CURDATE(),date_of_birth) AS days FROM users;
+
+SELECT salary,
+ROUND(salary) AS rounded,
+FLOOR(salary) AS floored,
+CEIL(salary) AS ceiled
+FROM users;
+
+
+SELECT id, MOD(id, 2) AS remainder FROM users;
+
+SELECT name, gender,
+IF(gender = 'Female', 'Yes', 'No') AS is_female
+FROM users;
+
+-- SET autocommit = 0;
+select * from users;
+-- rollback;
+-- DELETE FROM users WHERE id = 11;
+
+SELECT * FROM users;
