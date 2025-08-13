@@ -23,7 +23,7 @@ select * from users WHERE id = 10;
 
 -- FUNCTIONS IN SQL  
 
- COUNT, MAX, MIN, 
+--  COUNT, MAX, MIN, 
 
 SELECT COUNT(*) FROM users WHERE gender = 'Female'; 
 SELECT MIN(salary) AS min_salary, MAX(salary) AS max_salary FROM users;
@@ -34,3 +34,9 @@ SELECT AVG(salary) AS avg_salary FROM users;
 
 -- GROUP BY
 SELECT gender , AVG(salary) AS avg_salary FROM users GROUP BY gender;
+
+-- LENGTH 
+
+SELECT id,gender, lower(name) as lower, LENGTH(name) AS name_len FROM users;
+
+SELECT id,gender, lower(name) as lower, CONCAT(LOWER(name), '5677') as username, NOW() as time,YEAR(date_of_birth) AS yob, LENGTH(name) AS name_len FROM users;
