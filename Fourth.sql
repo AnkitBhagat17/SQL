@@ -12,3 +12,6 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
+
+SELECT * FROM users;
+SELECT * FROM addresses;
